@@ -5,6 +5,19 @@
   <title>Salini M Resume</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://kit.fontawesome.com/b3348ae33f.js" crossorigin="anonymous"></script>
+  <script>
+    function sendMail() {
+        var name = document.getElementById('YourName').value;
+        var email = document.getElementById('email-id').value;
+        var message = document.getElementById('message').value;
+
+        // Construct the mailto: URL
+        var mailtoLink = 'mailto:saliniabrahamm@gmail.com?subject=Contact%20Form&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nMessage: ' + message);
+
+        // Open the default email client
+        window.location.href = mailtoLink;
+    }
+</script>
 </head>
 
 <body>
@@ -178,8 +191,8 @@
             <span>Contact</span>
         </h1>
 
-    <div id="contact-info">
-            <form id="sendmail">
+        <div id="contact-info">
+            <div id="sendmail">
                 <div>
                     <input type="text" class="transparent" id="YourName" placeholder="Your Name">
                 </div>
@@ -187,10 +200,10 @@
                     <input type="email" class="transparent" id="email-id" placeholder="Your Email">
                 </div>
                 <div>
-                    <textarea name="message" class="transparent" placeholder="Message"></textarea>
+                    <textarea name="message" class="transparent" id="message" placeholder="Message"></textarea>
                 </div> 
-                    <button type="submit">Submit</button>
-            </form>
+                <button type="button" onclick="sendMail()">Submit</button>
+            </div>
             <div id="contact-details">
                 <h5>My Address</h5>
                 <p>2/172A, East Thathaiyarkulam,</p>
