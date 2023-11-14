@@ -257,7 +257,7 @@ section{
     height: auto;
     width: 100%;
     position: relative;
-    background-color: darkblue;
+    background:linear-gradient(to top right, #2857a4,#403066);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

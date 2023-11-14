@@ -192,24 +192,55 @@
         </h1>
 
         <div id="contact-info">
-            <div id="sendmail">
+            <form id="sendmail">
                 <div>
-                    <input type="text" class="transparent" id="YourName" placeholder="Your Name">
+                    <input type="text" class="transparent" id="name" placeholder="Your Name">
                 </div>
                 <div>
-                    <input type="email" class="transparent" id="email-id" placeholder="Your Email">
+                    <input type="email" class="transparent" id="email" placeholder="Your Email">
                 </div>
                 <div>
                     <textarea name="message" class="transparent" id="message" placeholder="Message"></textarea>
                 </div> 
-                <button type="button" onclick="sendMail()">Submit</button>
-            </div>
+                <button type="submit" onclick="sendMail()">Submit</button>
+            </form>
             <div id="contact-details">
                 <h5>My Address</h5>
                 <p>2/172A, East Thathaiyarkulam,</p>
                 <p>Kanyakumari Dist.</p>
                 <p>India-629901</p>
             </div>
+        </div>
+        <div id="social-container">
+          <div>
+            <ul class="horizontal-list text-center social-icons" style="margin-top: 0;">
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-stack-overflow"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-google-plus-g"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-quora"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
     </section>
   </main>
