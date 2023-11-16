@@ -119,10 +119,15 @@ body {
 /* changes */
 
 section{
-    display: flex;
+    /* display: flex;
     width:100%;
     align-items: center;
+    flex-direction: column; */
+    width: 100%;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
 }
 
 .section-heading{
@@ -137,6 +142,9 @@ section{
     color: rgb(65, 191, 233);
     font-family:fangsong;
 }
+
+
+/* Skills */
 
 #skills{
     height: 25vh;
@@ -212,6 +220,35 @@ section{
 .mb-steelblue{
     background-color: steelblue;
 }
+
+/* Experience */
+
+#timeline{
+    position: relative;
+    width: 75%;
+    border:2px solid #000000;   
+}
+
+.timeline-box{
+    /* border:2px solid black;
+    position: relative;
+    width:40%;
+    left: 5%;
+    min-height: 150px;
+    margin: 5px; */
+    position: relative;
+    margin: 5px;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    border: 2px solid black;
+}
+
+.timeline-box:nth-child(2n){
+    width: 53%;
+}
+
+/* portfolio */
 
 #portfolio-items{
     height: auto;
