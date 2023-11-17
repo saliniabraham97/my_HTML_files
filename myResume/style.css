@@ -9,7 +9,7 @@ body {
 #body-header {
     height: 65vh;
     opacity: 0.8;
-    background-image: url(Static/computer-keyboards-wallpaper-preview.jpg);
+    background-image: url(Static/lap.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -139,7 +139,7 @@ section{
 
 .section-heading>span{
     font-size: 2rem;
-    color: rgb(65, 191, 233);
+    color: rgb(168 38 97);
     font-family:fangsong;
 }
 
@@ -221,31 +221,110 @@ section{
     background-color: steelblue;
 }
 
-/* Experience */
+/* timeline */
 
-#timeline{
+.timeline{
     position: relative;
     width: 75%;
-    border:2px solid #000000;   
+    /* border: 2px solid black; */
+    margin: 20px;
+    padding: 20px;
 }
 
 .timeline-box{
-    /* border:2px solid black;
-    position: relative;
-    width:40%;
-    left: 5%;
-    min-height: 150px;
-    margin: 5px; */
-    position: relative;
+ position: relative;
     margin: 5px;
     width: 40%;
     left: 5%;
-    min-height: 150px;
-    border: 2px solid black;
+    min-height: 100px;
+    /* border: 2px solid black; */
+    line-height: 1;   
+    text-align: right;
+}
+
+.timeline-box:nth-child(2n+1)::after{
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: navy;
+    top:25%;
+    right: -12.5%;
+    z-index: 1; 
 }
 
 .timeline-box:nth-child(2n){
-    width: 53%;
+    width: 40%;
+    left: 55%;   
+    text-align: left;
+}
+
+.timeline-box:nth-child(2n)::after{
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: navy;
+    top:25%;
+    left: -14.5%;
+    z-index: 1;
+}
+/* .vertical-line {
+    position: relative;
+    margin: 5px;
+    border-left: 2px solid #000; 
+    height: 100vh; 
+    left: 50%;
+    margin-top: -100vh;
+} */
+.timeline-divider {
+    position: absolute;
+    border-left: 3px dashed #08a8bb; 
+    height: 75%; 
+    left: 50%;
+    top:10%;
+    width: 0;
+}
+
+.timeline-traveller{
+    position: sticky;
+    top:35%;
+    z-index: 2;
+    margin-left: -15.5px;
+    margin-top: 0px;
+}
+
+/* Experience */
+.timeline-heading{
+    font-size: 1rem;
+    font-family:verdana;
+    color: navy;   
+    font-weight: bold; 
+    margin-right: 3px;
+    margin-bottom: 2px;
+}
+.Institude{
+    font-size: 1rem;
+    font-family:'Segoe UI';
+    color: brown;    
+    margin-right: 3px;
+    margin-bottom: 2px;
+}
+
+.DOJ-DOR{
+    font-size: 0.8rem;
+    font-family:'Segoe UI';
+    color: gray;    
+    margin-right: 3px;
+    margin-bottom: 2px;
+}
+
+.desc{
+    font-size: 0.6rem;
+    font-family:'Segoe UI';
+    text-align: justify;
 }
 
 /* portfolio */
@@ -274,11 +353,10 @@ section{
     position: absolute;
     top: 0;
     left: 0;
-    /* transform: translate(-50%, -50%); */
     color: white;
-    background: rgba(0, 0, 0, 0.7); /*Adjust the background color and opacity */
-    padding: 50px; /* Adjust the padding as needed */
-    border-radius: 5px; /* Adjust the border-radius as needed */
+    background: rgba(0, 0, 0, 0.7); 
+    padding: 50px; 
+    border-radius: 5px; 
     opacity: 0;
     transition: opacity 0.5s ease;
 }
