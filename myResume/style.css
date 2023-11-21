@@ -296,6 +296,23 @@ section{
     margin-top: 0px;
 }
 
+@media screen and (max-width:600px) {
+    .timeline-divider{
+        left:5%;
+    }
+    .timeline-box{
+        left:12% !important;
+        width: 80%;
+        text-align: left;
+    }
+    .timeline-box:nth-child(2n)::after{
+        left: -35%;
+    }
+    .timeline-box:nth-child(2n+1)::after{
+        left: -18% !important;
+    }
+}
+
 /* Experience */
 .timeline-heading{
     font-size: 1rem;
@@ -341,30 +358,54 @@ section{
     position: relative;
     margin: 10px;
 }
-
 .item img{
-    display: block;
+    display: inline-block;
     height: 20vh;
     width: 20vw;
 }
 
 .item:hover::before{    
-    content: "Write here about the project";
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     color: white;
     background: rgba(0, 0, 0, 0.7); 
-    padding: 50px; 
-    border-radius: 5px; 
+    padding: 3%; 
+    font-size: 0.7rem;
+    border-radius: 2%; 
     opacity: 0;
-    transition: opacity 0.5s ease;
+    overflow: hidden;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.item1:hover::before{    
+    content: "Web API for Calculating distance between two end points";
+    position: absolute;
+}
+.item2:hover::before{    
+    content: "Web API for Order Management System- feedback log";
+    position: absolute;
+}
+.item3:hover::before{    
+    content: "Web API and webservice for Inventory Item adding.";
+    position: absolute;
+}
+.item4:hover::before{    
+    content: "Web API for Calculating distance between two end points";
+    position: absolute;
+}
+.item5:hover::before{    
+    content: "Web API for Calculating distance between two end points";
+    position: absolute;
+}
+.item6:hover::before{    
+    content: "Web API for Calculating distance between two end points";
+    position: absolute;
 }
 .item:hover::before {
     opacity: 1;
-  }
-
-
+  } 
 
   /* Contact */
 
