@@ -15,8 +15,10 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "file": "D:\\GitHub\\my_HTML_files\\myResume\\index.html"
+            // "file": "D:\\GitHub\\my_HTML_files\\myResume\\index.html"
             // "file": "D:\\CodingNinjas\\FrontEnd\\Css\\portfolio.html"
+            // "file":"D:\\CN assignment\\CSS Assignment_ Complete the Resume\\completing_resume.html"
+            "file": "D:\\CodingNinjas\\FrontEnd\\Bootstrap\\layouts.html"
         }
     ]
 }
