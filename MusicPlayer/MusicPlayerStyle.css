@@ -287,6 +287,10 @@ aside{
 	text-decoration: none;
 	color : #4b5c5e;
 }
+.dropdown-list i{	
+	margin-top: -50px;
+	margin-left: 180px;
+}
 .dropdown:hover .dropdown-menu{
 	height:150px;
     width: 200px;
@@ -313,7 +317,16 @@ aside{
 	flex-wrap: wrap;
 	justify-content:space-between;
 }
-.popular-artists-image{
+/* .popular-artists-image{
+	height:120px;
+	width: 120px;
+	border:0px;
+	border-radius: 50%;
+    margin-top: 2rem;
+	background-size: cover;	
+} */
+#popular-artists-image{
+	background-image: url(Images/Taylor-Swift.jpeg);	
 	height:120px;
 	width: 120px;
 	border:0px;
@@ -321,40 +334,102 @@ aside{
     margin-top: 2rem;
 	background-size: cover;	
 }
-#popular-artists-image1{
-	background-image: url(Images/Taylor-Swift.jpeg);
-}
 #popular-artists-image-2{
 	background-image: url(Images/Stray-Kids.jpeg);
+	height:120px;
+	width: 120px;
+	border:0px;
+	border-radius: 50%;
+    margin-top: 2rem;
+	background-size: cover;	
 }
 #popular-artists-image-3{
 	background-image: url(Images/Chris-Stapleton.jpeg);
+	height:120px;
+	width: 120px;
+	border:0px;
+	border-radius: 50%;
+    margin-top: 2rem;
+	background-size: cover;	
 }
 #popular-artists-image-4{
 	background-image: url(Images/Morgan-Wallen.jpeg);
+	height:120px;
+	width: 120px;
+	border:0px;
+	border-radius: 50%;
+    margin-top: 2rem;
+	background-size: cover;	
 }
 #popular-artists-image-5{
 	background-image: url(Images/Drake.jpeg);
+	height:120px;
+	width: 120px;
+	border:0px;
+	border-radius: 50%;
+    margin-top: 2rem;
+	background-size: cover;	
 }
 #popular-artists-image-6{
 	background-image: url(Images/The-Beatles.jpeg);
+	height:120px;
+	width: 120px;
+	border:0px;
+	border-radius: 50%;
+    margin-top: 2rem;
+	background-size: cover;	
 }
-.popular-artists-text{
+#popular-artists-text{
 	text-align: center;
-	margin-top: 100%;
+	margin-top: 40%;
 	color: var(--font_color_1);
 	font-family: sans-serif;
 	font-weight: bold;
 }
-.popular-artists-text a{
+#popular-artists-text a{
 	text-decoration: none;
 	color: var(--font_color_1);
 }
-.popular-artists-image:hover{
+#popular-artists-image:hover{
 	box-shadow: 0px 0px 9px 5px rgba(230,196,196,0.2); /*On hovering a shadow appears*/
 	opacity: 0.8;
 }
-.popular-artists-image:hover>.hide{
+#popular-artists-image:hover>.hide{
+	display: block;
+}
+#popular-artists-image-2:hover{
+	box-shadow: 0px 0px 9px 5px rgba(230,196,196,0.2);
+	opacity: 0.8;
+}
+#popular-artists-image-2:hover>.hide{
+	display: block;
+}
+#popular-artists-image-3:hover{
+	box-shadow: 0px 0px 9px 5px rgba(230,196,196,0.2);
+	opacity: 0.8;
+}
+#popular-artists-image-3:hover>.hide{
+	display: block;
+}
+#popular-artists-image-4:hover{
+	box-shadow: 0px 0px 9px 5px rgba(230,196,196,0.2);
+	opacity: 0.8;
+}
+#popular-artists-image-4:hover>.hide{
+	display: block;
+}
+#popular-artists-image-5:hover{
+	box-shadow: 0px 0px 9px 5px rgba(230,196,196,0.2);
+	opacity: 0.8;
+}
+#popular-artists-image-5:hover>.hide{
+	display: block;
+}
+#popular-artists-image-6:hover{
+	box-shadow: 0px 0px 9px 5px rgba(230,196,196,0.2);
+	opacity: 0.8;
+}
+#popular-artists-image-6:hover>.hide{
 	display: block;
 }
 
@@ -1232,6 +1307,7 @@ aside #song #song-number{
     #queue-favourite{
     	margin-left: 130px;
 	}
+	
 	#genre-item{
 		margin-right: 1rem;
 		margin-bottom: 1rem;
@@ -1352,6 +1428,13 @@ aside #song #song-number{
 		position: absolute;
 		right:-100%;
 	}
+	#genre{
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+	.genre-item-background{
+		margin-bottom: 4rem;
+	}
 }
 
 @media only screen and (max-width: 500px){
@@ -1382,6 +1465,14 @@ aside #song #song-number{
 	 color:lightgrey; 
 	 font-size:0.2rem;
    }
+   #genre{
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	}
+   .genre-item-background{
+	margin-left: 4rem;
+	margin-right: 4rem;
+	}
    #play-buttons{
 	   margin-top: -3%;
        margin-left: 220px;
