@@ -20,7 +20,7 @@ body{
 }
 
 nav{
-	height: 4rem;
+	height: 4vh;
 	width:100%;
 	margin: 0.3rem;
 	display: flex;
@@ -157,23 +157,25 @@ aside{
 #new-releases{
 	overflow: hidden;
 	white-space: nowrap;
+	display: flex;
+	justify-content: space-around;
 }
 #new-releases img{
-	height:35vh;
-	width:35vh;
+	height:30vh;
+	width:40vh;
 	text-align: center;
 	margin-top: 50px;
-	padding: 4%;
+	padding: 2%;
 	transition: transform 0.7s ease-in-out;
 
 }
 #new-releases img:hover{
-	transform: scale(1.1);
+	transform: scale(1.4);
 	transition: transform 0.4s ease-in-out; /*Animation on hover*/
 }
 /*End of home screen carousel*/
 /*Begining of latest release section*/
-#latest-release-items{
+.latest-release-items{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -190,54 +192,80 @@ aside{
 	margin-top: 6vh;
 	margin-bottom: -14px;
 }
-#latest-release-item{
+.latest-release-item{
 	height:auto;
-	width:300px;
+	width:325px;
 	color: var(--font_color_1);
 	font-family: helvetica, sans-serif;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: flex-start;
 	padding-top: 2rem;
 }
-#latest-item-title{
+.latest-item-title{
 	padding-left: 1rem;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-around;
 	margin-left: 0vw;
 }
-#latest-release-img{
+
+.latest-item-title b,p{
+	text-align: left;
+}
+.latest-release-img{
 	height: 100px;
 	width: 100px;
 	padding: 0px;
-	background-image: url(Images/latest-release-2.png);
-	background-position: center;
-	background-size: cover;
 	color: var(--font_color_1);
 	text-align: center;
-	font-size: 1.3rem;
+	font-size: 1.3rem;	
+	background-position: center;
+	background-size: cover;
 }
-#latest-release-img-button{
+#latest-release-img1{	
+	background-image: url(Images/Jungkook.jpeg);
+}
+#latest-release-img2{	
+	background-image: url(Images/Ed-Sheeran.jpeg);
+	background-position: center;
+	background-size: cover;
+}
+#latest-release-img3{	
+	background-image: url(Images/Taylor-Swift.jpeg);
+	background-position: center;
+	background-size: cover;
+}
+#latest-release-img4{	
+	background-image: url(Images/Dua-Lipa.jpeg);
+	background-position: center;
+	background-size: cover;
+}
+.latest-release-img-button{
 	margin-top: 40%;
 }
-#latest-release-img-button a{
+.latest-release-img-button a{
 	color: var(--font_color_1);
 }
-#latest-release-img:hover{
+.latest-release-img:hover{
 	opacity: 0.8;
 }
-#latest-release-img:hover>.hide{
+.latest-release-img:hover>.hide{
 	display: block;   /*Play button is displayed on hover*/
 }
 /*Dropdown bar of latest release section*/
-#dropdown{
+.dropdown{
 	height: 50px;
 	width: 50px;
 	position: absolute;
 	margin-left: 23vw;
 }
-#dropdown-menu{
+
+.dropdown i{
+	position: absolute;
+	left:100%;
+}
+.dropdown-menu{
 	height:0px;
 	width: 0px;
 	margin: 0px;
@@ -251,26 +279,26 @@ aside{
 	padding: 1rem;
 	display: none;
 }
-#dropdown-list{
+.dropdown-list{
     display: none;
 	margin-bottom: 1rem;
 }
-#dropdown-list a{
+.dropdown-list a{
 	text-decoration: none;
 	color : #4b5c5e;
 }
-#dropdown:hover #dropdown-menu{
+.dropdown:hover .dropdown-menu{
 	height:150px;
     width: 200px;
 	display: block;
 }
-#dropdown:hover #dropdown-list{
+.dropdown:hover .dropdown-list{
 	display: block;
 }
 /*End of Dropdown bar of latest release section*/
 /*End of latest release section*/
 /*Begining of popular artist section*/
-#popular-artists h1{
+.popular-artists h1{
 	font-family: helvetica, sans-serif;
 	color: var(--font_color_1);
 	font-weight: bold;
@@ -279,121 +307,57 @@ aside{
 	margin-left: -5px;
 	margin-bottom: -14px;
 }
-#popular-artist-list{
+.popular-artist-list{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content:space-between;
 }
-#popular-artists-image{
-	background-image: url(Images/artist-1.jpg);
-	background-size: cover;
+.popular-artists-image{
 	height:120px;
 	width: 120px;
 	border:0px;
 	border-radius: 50%;
     margin-top: 2rem;
+	background-size: cover;	
+}
+#popular-artists-image1{
+	background-image: url(Images/Taylor-Swift.jpeg);
 }
 #popular-artists-image-2{
-	background-image: url(Images/artist-6.jpg);
-	background-size: cover;
-	height:120px;
-	width: 120px;
-	border:0px;
-	border-radius: 50%;
-    margin-top: 2rem;
+	background-image: url(Images/Stray-Kids.jpeg);
 }
 #popular-artists-image-3{
-	background-image: url(Images/artist-2.jpg);
-	background-size: cover;
-	height:120px;
-	width: 120px;
-	border:0px;
-	border-radius: 50%;
-    margin-top: 2rem;
+	background-image: url(Images/Chris-Stapleton.jpeg);
 }
 #popular-artists-image-4{
-	background-image: url(Images/artist-5.jpg);
-	background-size: cover;
-	height:120px;
-	width: 120px;
-	border:0px;
-	border-radius: 50%;
-    margin-top: 2rem;
+	background-image: url(Images/Morgan-Wallen.jpeg);
 }
 #popular-artists-image-5{
-	background-image: url(Images/artist-7.jpg);
-	background-size: cover;
-	background-position: center;
-	height:120px;
-	width: 120px;
-	border:0px;
-	border-radius: 50%;
-    margin-top: 2rem;
+	background-image: url(Images/Drake.jpeg);
 }
 #popular-artists-image-6{
-	background-image: url(Images/artist-3.jpg);
-	background-size: cover;
-	background-position: center;
-	height:120px;
-	width: 120px;
-	border:0px;
-	border-radius: 50%;
-    margin-top: 2rem;
+	background-image: url(Images/The-Beatles.jpeg);
 }
-#popular-artists-text{
+.popular-artists-text{
 	text-align: center;
-	margin-top: 40%;
+	margin-top: 100%;
 	color: var(--font_color_1);
 	font-family: sans-serif;
 	font-weight: bold;
 }
-#popular-artists-text a{
+.popular-artists-text a{
 	text-decoration: none;
 	color: var(--font_color_1);
 }
-#popular-artists-image:hover{
+.popular-artists-image:hover{
 	box-shadow: 0px 0px 9px 5px rgba(230,196,196,0.2); /*On hovering a shadow appears*/
 	opacity: 0.8;
 }
-#popular-artists-image:hover>.hide{
+.popular-artists-image:hover>.hide{
 	display: block;
 }
-#popular-artists-image-2:hover{
-	box-shadow: 0px 0px 9px 5px rgba(230,196,196,0.2);
-	opacity: 0.8;
-}
-#popular-artists-image-2:hover>.hide{
-	display: block;
-}
-#popular-artists-image-3:hover{
-	box-shadow: 0px 0px 9px 5px rgba(230,196,196,0.2);
-	opacity: 0.8;
-}
-#popular-artists-image-3:hover>.hide{
-	display: block;
-}
-#popular-artists-image-4:hover{
-	box-shadow: 0px 0px 9px 5px rgba(230,196,196,0.2);
-	opacity: 0.8;
-}
-#popular-artists-image-4:hover>.hide{
-	display: block;
-}
-#popular-artists-image-5:hover{
-	box-shadow: 0px 0px 9px 5px rgba(230,196,196,0.2);
-	opacity: 0.8;
-}
-#popular-artists-image-5:hover>.hide{
-	display: block;
-}
-#popular-artists-image-6:hover{
-	box-shadow: 0px 0px 9px 5px rgba(230,196,196,0.2);
-	opacity: 0.8;
-}
-#popular-artists-image-6:hover>.hide{
-	display: block;
-}
+
 /*End of popular artists section*/
 /*Begining of playlist section*/
 #playlist{
@@ -515,17 +479,16 @@ aside{
 	overflow: hidden;
 	margin-bottom: -5%;
 }
-#genre-item{
+.genre-item{
 	height: auto;
 	width: auto;
 	margin-top: -5%;
 	padding: 0px;
-	transition: transform 0.7s ease-in-out;
+	transition: transform 0.2s ease-in-out;
 }
-#genre-item-background-1{
+.genre-item-background{
 	height: 150px;
 	width: 250px;
-	background-image: url(Images/genre-1.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	opacity: 01;
@@ -538,42 +501,19 @@ aside{
 	text-align: center;
 	margin-bottom: 2rem;
 }
-#genre-item:hover{
-	transform: scale(0.9);
+#genre-item-background-1{
+	background-image: url(Images/genre-1.jpg);
+}
+.genre-item:hover{
+	transform: scale(1.2);
 }
 #genre-item-background-2{
-	height: 150px;
-	width: 250px;
 	background-image: url(Images/genre-2.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	padding: 0px;
-	margin-left: -10px;
-	color: var(--font_color_2);
-	font-family: sans-serif;
-	font-size: 1.5rem;
-	line-height: 8rem;
-	font-weight: bold;
-	text-align: center;
-	margin-bottom: 2rem;
 }
 #genre-item-background-3{
-	height: 150px;
-	width: 250px;
 	background-image: url(Images/genre-3.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	padding: 0px;
-	margin-left: -20px;
-	color: var(--font_color_2);
-	font-family: sans-serif;
-	font-size: 1.5rem;
-	font-weight: bold;
-	text-align: center;
-	line-height: 8rem;
-	margin-bottom: 2rem;
 }
-#genre-item-text{
+/* .genre-item-text{
 	color: white;
 	text-align: center;
 	font-family: sans-serif;
@@ -582,10 +522,10 @@ aside{
 	padding-top: 30px;
 	opacity: 1;
 	font-weight: 600;
-}
+} */
 /*End of genre section*/
 /*Latest Songs section*/
-#latest-songs h1{
+.latest-songs h1{
 	font-family: sans-serif;
 	color: var(--font_color_1);
 	font-weight: bold;
@@ -595,7 +535,7 @@ aside{
 	margin-left: -5px;
 	margin-bottom: -14px;
 }
-#latest-songs-list{
+.latest-songs-list{
 	height:auto;
 	width:100%;
 	display: flex;
@@ -603,14 +543,13 @@ aside{
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
-#latest-songs-item{
+.latest-songs-item{
    height:150px;
    width: auto;
    margin-top: 2rem;
    margin-bottom: 1rem;
 }
-#latest-songs-item-img-1{
-    background-image: url(Images/new-english-1.png);
+.latest-songs-item-img{
     background-size: cover;
     background-position: center;
     height: 130px;
@@ -618,6 +557,9 @@ aside{
     text-align: center;
     color: var(--font_color_1);
     font-size: 1.5rem;
+}
+#latest-songs-item-img-1{
+    background-image: url(Images/new-english-1.png);
 }
 #latest-songs-item-img-1:hover{
 	opacity: 0.8;
@@ -627,13 +569,6 @@ aside{
 }
 #latest-songs-item-img-2{
     background-image: url(Images/new-english-2.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 130px;
-    width: 130px;
-    text-align: center;
-    color: var(--font_color_1);
-    font-size: 1.5rem;
 }
 
 #latest-songs-item-img-2:hover{
@@ -644,13 +579,6 @@ aside{
 }
 #latest-songs-item-img-3{
     background-image: url(Images/new-english-3.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 130px;
-    width: 130px;
-    text-align: center;
-    color: var(--font_color_1);
-    font-size: 1.5rem;
 }
 
 #latest-songs-item-img-3:hover{
@@ -661,13 +589,6 @@ aside{
 }
 #latest-songs-item-img-4{
     background-image: url(Images/new-english-4.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 130px;
-    width: 130px;
-    text-align: center;
-    color: var(--font_color_1);
-    font-size: 1.5rem;
 }
 
 #latest-songs-item-img-4:hover{
@@ -678,13 +599,6 @@ aside{
 }
 #latest-songs-item-img-5{
     background-image: url(Images/new-english-5.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 130px;
-    width: 130px;
-    text-align: center;
-    color: var(--font_color_1);
-    font-size: 1.5rem;
 }
 
 #latest-songs-item-img-5:hover{
@@ -695,13 +609,6 @@ aside{
 }
 #latest-songs-item-img-6{
     background-image: url(Images/new-hindi-1.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 130px;
-    width: 130px;
-    text-align: center;
-    color: var(--font_color_1);
-    font-size: 1.3rem;
 }
 
 #latest-songs-item-img-6:hover{
@@ -712,13 +619,6 @@ aside{
 }
 #latest-songs-item-img-7{
     background-image: url(Images/new-hindi-2.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 130px;
-    width: 130px;
-    text-align: center;
-    color: var(--font_color_1);
-    font-size: 1.3rem;
 }
 
 #latest-songs-item-img-7:hover{
@@ -729,13 +629,6 @@ aside{
 }
 #latest-songs-item-img-8{
     background-image: url(Images/new-hindi-1.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 130px;
-    width: 130px;
-    text-align: center;
-    color: var(--font_color_1);
-    font-size: 1.3rem;
 }
 
 #latest-songs-item-img-8:hover{
@@ -746,13 +639,6 @@ aside{
 }
 #latest-songs-item-img-9{
     background-image: url(Images/new-hindi-4.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 130px;
-    width: 130px;
-    text-align: center;
-    color: var(--font_color_1);
-    font-size: 1.3rem;
 }
 
 #latest-songs-item-img-9:hover{
@@ -763,13 +649,6 @@ aside{
 }
 #latest-songs-item-img-10{
     background-image: url(Images/new-hindi-5.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 130px;
-    width: 130px;
-    text-align: center;
-    color: var(--font_color_1);
-    font-size: 1.3rem;
 }
 
 #latest-songs-item-img-10:hover{
@@ -778,12 +657,12 @@ aside{
 #latest-songs-item-img-10:hover>.hide{
 	display: block;
 }
-#latest-songs-item-button{
+.latest-songs-item-button{
 	margin-top: 0%;
 	position: relative;
 	top:37%;
 }
-#latest-songs-item-title{
+.latest-songs-item-title{
 	font-family: sans-serif;
 	color: var(--font_color_1);
 	text-align: left;
@@ -832,6 +711,7 @@ aside{
 	color: black;
 	background-color: var(--font_color_1);;
 	border :0px;
+	text-align: right;
 }
 #aside-dropdown select:focus{
 	outline:none;
@@ -845,19 +725,39 @@ aside{
 	margin-top: 1vh;
 	border-radius:5px;
 }
-#queue-item-img{
+.queue-item-img{
 	height: 80px;
 	width: 80px;
 	padding: 1%;
 	margin-top: 1.5vh;
 	margin-left: 1vw;
-	background-image: url(Images/latest-release-2.png);
 	background-position: center;
 	background-size: cover;
 	color: var(--font_color_1);
 	text-align: center;
 	font-size: 1.3rem;
 	border-radius: 3px;
+}
+#queue-item-img1{
+	background-image: url(Images/Jungkook.jpeg);
+}
+#queue-item-img2{
+	background-image: url(Images/Taylor-Swift.jpeg);
+}
+#queue-item-img3{
+	background-image: url(Images/SelenaGomez.jpeg);
+}
+#queue-item-img4{
+	background-image: url(Images/Dua-Lipa.jpeg);
+}
+#queue-item-img5{
+	background-image: url(Images/Otilia.jpeg);
+}
+#queue-item-img6{
+	background-image: url(Images/RuthB.jpeg);
+}
+#queue-item-img7{
+	background-image: url(Images/Chainsmokers.jpeg);
 }
 #queue-item-title{
 	font-family: sans-serif;
@@ -1019,7 +919,7 @@ main, aside etc. are same as before*/
 	height: 60vh;
 	width: 40%;
 	background: linear-gradient(to bottom, rgba(13,0,101,0) 10%,
-              rgba(13,0,101,1)), url(Images/artist-6.jpg); /*Adding linear gradient*/
+              rgba(13,0,101,1)), url(Images/Dua-Lipa1.jpeg); /*Adding linear gradient*/
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1206,13 +1106,22 @@ main, aside etc. are same as before*/
 	margin-bottom: -1.5rem;
 }
 
-#artist-img{
-   background-image: url(Images/artist-7.jpg);
+.artist-img{  
    height: 15vh;
    width: 15vh;
    background-position: center;
    background-size: cover;
    margin-right: -0.5rem;
+}
+
+#artist-img1{
+	background-image: url(Images/charlie-puth1.jpeg);
+}
+#artist-img2{
+	background-image: url(Images/Taylor-Swift.jpeg);
+}
+#artist-img3{
+	background-image: url(Images/Ed-Sheeran.jpeg);
 }
 
 #similar-artist i{
@@ -1261,9 +1170,15 @@ aside #song #song-number{
 /*Responsiveness*/
 
 @media only screen and (max-width: 900px){
+	#search-bar-utility {
+		margin-top: 5%;
+	}
+	#music-player-tag{
+		margin-top: 5%;
+	}
 	#new-releases img{
-		height: 300px;
-		width: 200px;
+		height: 30vh;
+		width: 40vw;
 	}
 	#music-player-logo img{
        height: 2.2rem;
@@ -1308,9 +1223,6 @@ aside #song #song-number{
 	}
 	#aside-title{
 		font-size: 1.5rem;
-	}
-	#new-releases img{
-		height: 40vh;
 	}
 	#queue-item{
 		width: 250px;
@@ -1433,6 +1345,13 @@ aside #song #song-number{
 	    margin-bottom: 0.5rem;
 	    margin-right: 1rem;
    }
+}
+
+@media only screen and (max-width: 800px){
+	.dropdown i{
+		position: absolute;
+		right:-100%;
+	}
 }
 
 @media only screen and (max-width: 500px){
