@@ -396,11 +396,11 @@ section{
     position: absolute;
 }
 .item5:hover::before{    
-    content: "Web API for Calculating distance between two end points";
+    content: "Music Player using HTML and CSS";
     position: absolute;
 }
 .item6:hover::before{    
-    content: "Web API for Calculating distance between two end points";
+    content: "Resume Using HTML and CSS";
     position: absolute;
 }
 .item:hover::before {
